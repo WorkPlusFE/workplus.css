@@ -1,0 +1,8 @@
+{
+  "name": "@workplus-css/reset",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.css",
+  "author": "",
+  "license": "MIT"
+}

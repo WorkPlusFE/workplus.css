@@ -1,0 +1,10 @@
+{
+  "lerna": "3.5.1",
+  "packages": [
+    "modules/*",
+    "tools/*"
+  ],
+  "version": "1.0.0",
+  "npmClient": "npm",
+  "npmClientArgs": ["--no-package-lock"]
+}

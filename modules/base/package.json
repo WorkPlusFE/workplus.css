@@ -1,0 +1,8 @@
+{
+  "name": "@workplus-css/base",
+  "version": "1.0.0",
+  "description": "The base part of workplus.css",
+  "main": "src/index.css",
+  "author": "",
+  "license": "MIT"
+}

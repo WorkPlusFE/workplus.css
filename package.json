@@ -1,0 +1,40 @@
+{
+  "name": "workplus.css",
+  "private": true,
+  "scripts": {
+    "start": "npm run build",
+    "bootstrap": "lerna bootstrap --hoist",
+    "test": "npm run lint",
+    "lint": "stylelint **/src/**/*.css",
+    "build": "lerna run build",
+    "sb:start": "start-storybook -p 9001 -c .storybook"
+  },
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-options": "^4.1.4",
+    "@storybook/addons": "^4.1.4",
+    "@storybook/react": "^4.1.4",
+    "autoprefixer": "^9.4.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-minify": "^0.5.0",
+    "code-blocks": "^1.1.0",
+    "css-loader": "^2.1.0",
+    "gh-pages": "^2.0.1",
+    "html-to-react": "^1.3.4",
+    "lerna": "^3.5.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-nesting": "^7.0.0",
+    "postcss-simple-extend": "^1.0.0",
+    "postcss-url": "^8.0.0",
+    "raw-loader": "^1.0.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "style-loader": "^0.23.1",
+    "stylelint": "^8.0.0",
+    "stylelint-config-standard": "^17.0.0"
+  }
+}

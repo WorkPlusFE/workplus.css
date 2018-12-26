@@ -1,0 +1,13 @@
+{
+  "name": "@workplus-css/framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.css",
+  "author": "Hejx",
+  "license": "MIT",
+  "dependencies": {
+    "@workplus-css/reset": "^1.0.0",
+    "@workplus-css/base": "^1.0.0",
+    "@workplus-css/text": "^1.0.0"
+  }
+}
