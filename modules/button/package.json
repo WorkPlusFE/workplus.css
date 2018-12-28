@@ -4,18 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gulp",
-    "build": "gulp build",
-    "version": "npm run build && git add -A ."
+    "build": "../../script/npm-run build-css src/button.css"
   },
   "author": "Hejx",
   "homepage": "https://github.com/WorkPlusFE/workplus.css",
   "license": "MIT",
   "dependencies": {
     "@workplus-css/base": "^1.0.0"
-  },
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "@workplus-css/build-css": "^1.0.0"
   }
 }

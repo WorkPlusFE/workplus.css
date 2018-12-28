@@ -5,6 +5,10 @@
   "main": "index.css",
   "author": "Hejx",
   "license": "MIT",
+  "scripts": {
+    "build": "../../script/npm-run build-css index.css"
+  },
+  "homepage": "https://github.com/WorkPlusFE/workplus.css",
   "dependencies": {
     "@workplus-css/reset": "^1.0.0",
     "@workplus-css/base": "^1.0.0",

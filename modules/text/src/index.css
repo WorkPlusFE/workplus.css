@@ -1,28 +1,33 @@
 .text-left {
-    text-align: left;
+  text-align: left;
 }
+
 .text-center {
-    text-align: center;
+  text-align: center;
 }
+
 .text-right {
-    text-align: right;
+  text-align: right;
 }
 
 .text-muted {
-    color: var(--color-text-muted);
+  color: var(--color-text-muted);
 }
+
 .text-primary {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
+
 .text-danger {
-    color: var(--color-danger);
+  color: var(--color-danger);
 }
+
 a.text-muted,
 a.text-primary,
 a.text-danger {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .text-small {
-    font-size: var(--font-size-small);
+  font-size: var(--font-size-small);
 }

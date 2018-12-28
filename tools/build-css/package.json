@@ -1,10 +1,14 @@
 {
-  "name": "@workplus-css/build-css",
+  "name": "build-css",
   "version": "1.0.0",
   "description": "",
-  "main": "build.js",
+  "main": "index.js",
+  "bin": "cli.js",
   "author": "Hejx",
   "license": "MIT",
+  "scripts": {
+    "build:demo": "../../script/npm-run build-css test/demo.css"
+  },
   "dependencies": {
     "cssnano": "^4.0.0-rc.0",
     "gulp": "^3.9.1",
@@ -12,8 +16,9 @@
     "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.6.1",
-    "postcss-cssnext": "^3.0.2",
+    "meow": "^5.0.0",
     "postcss-import": "^10.0.0",
+    "postcss-preset-env": "^6.5.0",
     "postcss-pxtorem": "^4.0.0",
     "rimraf": "^2.6.1",
     "stylefmt": "^5.0.0"
