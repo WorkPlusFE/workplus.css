@@ -15,6 +15,7 @@
     "@workplus-css/text": "^1.0.0",
     "@workplus-css/button": "^1.0.0",
     "@workplus-css/layout": "^1.0.0",
-    "@workplus-css/table": "^1.0.0"
+    "@workplus-css/table": "^1.0.0",
+    "@workplus-css/filters": "^1.0.0"
   }
 }

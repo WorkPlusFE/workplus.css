@@ -1,0 +1,5 @@
+$prefix: $global-prefix;
+
+.$(prefix)grayscale {
+  filter: grayscale(100%);
+}
