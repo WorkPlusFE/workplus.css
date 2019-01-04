@@ -2,15 +2,18 @@ const path = require('path');
 
 const rimraf = require('rimraf');
 const gulp = require('gulp');
-const postcss = require('gulp-postcss');
-const atImport = require('postcss-import');
-const postcssPresetEnv = require('postcss-preset-env');
-const pxtorem = require('postcss-pxtorem');
 const cssnano = require('cssnano');
 const stylefmt = require('stylefmt');
 const insert = require('gulp-insert');
 const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
+
+const postcss = require('gulp-postcss');
+const atImport = require('postcss-import');
+const postcssPresetEnv = require('postcss-preset-env');
+const pxtorem = require('postcss-pxtorem');
+const mixins = require("postcss-mixins");
+const simpleVars = require("postcss-simple-vars");
 
 function clean(targetPath) {
   rimraf.sync(targetPath);
@@ -31,6 +34,8 @@ module.exports = (src, flags = {}, callback) => {
 
   const plugins = [
     atImport(),
+    mixins(),
+    simpleVars(),
     postcssPresetEnv({
       browsers: 'last 2 versions',
     }),

@@ -1,3 +1,6 @@
 @import '@workplus-css/reset';
 @import '@workplus-css/base';
+@import '@workplus-css/layout';
 @import '@workplus-css/text';
+@import '@workplus-css/button';
+@import '@workplus-css/table';

@@ -7,6 +7,8 @@ module.exports = (ctx) => {
       require("postcss-import")({ addDependencyTo: ctx.webpack }),
       require("postcss-url")(),
       require('postcss-nesting')(),
+      require("postcss-mixins")(),
+      require("postcss-simple-vars")(),
       require('postcss-simple-extend')(),
       require("postcss-cssnext")({ browsers: [ "last 3 versions" ] })
     ]

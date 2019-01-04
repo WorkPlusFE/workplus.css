@@ -1,0 +1,44 @@
+$prefix: $global-prefix;
+
+.$(prefix)pages {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.$(prefix)page {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+
+.$(prefix)page-content {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.$(prefix)block {
+  margin: 35px 0;
+  padding: 0 15px;
+  color: var(--color-text);
+}
+
+.$(prefix)block-title {
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin: 35px 15px 10px;
+  line-height: 17px;
+}
+
+.$(prefix)block-title + .$(prefix)block {
+  margin-top: 10px;
+}

@@ -1,10 +1,10 @@
 {
-  "name": "@workplus-css/button",
+  "name": "@workplus-css/table",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.css",
   "scripts": {
-    "build": "../../script/npm-run build-css src/button.css"
+    "build": "../../script/npm-run build-css src/table.css"
   },
   "author": "Hejx",
   "homepage": "https://github.com/WorkPlusFE/workplus.css",

@@ -1,6 +1,8 @@
 import React from 'react'
 import { configure, addDecorator } from '@storybook/react'
 import { setOptions } from '@storybook/addon-options'
+import { configureViewport } from '@storybook/addon-viewport';
+import { withNotes } from '@storybook/addon-notes';
 import '../modules/workplus.css'
 import { version } from '../modules/workplus.css/package.json'
 
@@ -10,11 +12,19 @@ setOptions({
   showDownPanel: false,
 })
 
+configureViewport({
+  defaultViewport: 'iphone6',
+});
+
 addDecorator(story => (
   <div className='w-page'>
+    <div className='w-page-content'>
     {story()}
+    </div>
   </div>
-))
+));
+
+addDecorator(withNotes);
 
 const contexts = [
   require.context('../modules', true, /stories.*\.js$/),
@@ -26,4 +36,4 @@ configure(() => {
       .filter(key => !key.includes('node_modules'))
       .forEach(context)
   })
-}, module)
+}, module);
