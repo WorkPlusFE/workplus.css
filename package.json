@@ -10,7 +10,8 @@
     "diff": "lerna diff",
     "updated": "lerna updated || exit 0",
     "build": "lerna run build",
-    "sb:start": "start-storybook -p 9001 -c .storybook"
+    "sb:start": "start-storybook -p 9001 -c .storybook",
+    "new-module": "script/new-module"
   },
   "dependencies": {
     "@babel/core": "^7.2.2",
@@ -43,6 +44,7 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "style-loader": "^0.23.1",
-    "stylelint": "^8.0.0"
+    "stylelint": "^8.0.0",
+    "workplus-cli": "^0.10.2"
   }
 }

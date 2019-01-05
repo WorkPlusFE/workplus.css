@@ -1,0 +1,24 @@
+#!/bin/bash
+set -e
+
+function generate() {
+  pushd modules > /dev/null
+  npx wp start ../tools/module-template "$@"
+  popd > /dev/null
+}
+
+if [[ "$@" == "--help" ]]; then
+  generate "$@"
+else
+  echo
+  echo "📦  Creating a new module..."
+  echo
+  echo "   This feature creates a new module via 'workpluc-cli'."
+  echo "   https://github.com/WorkPlusFE/WorkPlus-cli"
+  echo
+
+  generate "$@"
+
+  echo "✅  All set! Let me bootstrap that new module for ya..."
+  npm run bootstrap
+fi
