@@ -41,6 +41,7 @@
 
   --padding-code: 0.2em 0.3em;
 
+  /* stylelint-disable */
   --spacing-gap: (
     5: 5px,
     10: 10px,
@@ -49,6 +50,7 @@
     25: 25px,
     30: 30px,
   );
+  /* stylelint-enable */
 
   /* Typography */
   --font-size: calc(var(--size-base) * 1.6);
