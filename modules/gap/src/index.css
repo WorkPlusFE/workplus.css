@@ -1,0 +1,94 @@
+$prefix: $global-prefix;
+
+@each $modify, $value in var(--spacing-gap) {
+  .$(prefix)m-$(modify) {
+    display: inline-block;
+    margin: $(value);
+  }
+
+  .$(prefix)p-$(modify) {
+    display: inline-block;
+    padding: $(value);
+  }
+
+  .$(prefix)gap-$(modify) {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: $(value);
+    text-indent: 999999;
+  }
+}
+
+@each $modify, $value in var(--spacing-gap) {
+  .$(prefix)mt-$(modify) {
+    display: inline-block;
+    margin-top: $(value);
+  }
+
+  .$(prefix)pt-$(modify) {
+    display: inline-block;
+    padding-top: $(value);
+  }
+}
+
+@each $modify, $value in var(--spacing-gap) {
+  .$(prefix)ml-$(modify) {
+    display: inline-block;
+    margin-left: $(value);
+  }
+
+  .$(prefix)pl-$(modify) {
+    display: inline-block;
+    padding-left: $(value);
+  }
+}
+
+@each $modify, $value in var(--spacing-gap) {
+  .$(prefix)mr-$(modify) {
+    display: inline-block;
+    margin-right: $(value);
+  }
+
+  .$(prefix)pr-$(modify) {
+    display: inline-block;
+    padding-right: $(value);
+  }
+}
+
+@each $modify, $value in var(--spacing-gap) {
+  .$(prefix)mb-$(modify) {
+    display: inline-block;
+    margin-bottom: $(value);
+  }
+
+  .$(prefix)pb-$(modify) {
+    display: inline-block;
+    padding-bottom: $(value);
+  }
+}
+
+@each $modify, $value in var(--spacing-gap) {
+  .$(prefix)mx-$(modify) {
+    display: inline-block;
+    margin: 0 $(value);
+  }
+
+  .$(prefix)px-$(modify) {
+    display: inline-block;
+    padding: 0 $(value);
+  }
+}
+
+@each $modify, $value in var(--spacing-gap) {
+  .$(prefix)my-$(modify) {
+    display: inline-block;
+    margin: $(value) 0;
+  }
+
+  .$(prefix)py-$(modify) {
+    display: inline-block;
+    padding: $(value) 0;
+  }
+}

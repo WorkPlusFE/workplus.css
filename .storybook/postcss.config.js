@@ -6,6 +6,8 @@ module.exports = (ctx) => {
     plugins: [
       require("postcss-import")({ addDependencyTo: ctx.webpack }),
       require("postcss-url")(),
+      require("postcss-each-variables")(),
+      require("postcss-each")(),
       require('postcss-nesting')(),
       require("postcss-mixins")(),
       require("postcss-simple-vars")(),
@@ -14,4 +16,3 @@ module.exports = (ctx) => {
     ]
   }
 }
-  

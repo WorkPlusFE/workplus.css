@@ -1,0 +1,22 @@
+.padding-green {
+  display: inline-block;
+  background: #C4DCB9;
+  margin: 0 10px 10px 0;
+  & > * {
+    background: #A2C5E5;
+    display: inline-block;
+  }
+}
+
+.margin-orange {
+  display: inline-block;
+  background: #F7CBA3;
+  margin: 0 10px 10px 0;
+  & > * {
+    background: #A2C5E5;
+  }
+}
+
+.gap-bg {
+  background: #F7CBA3;
+}

@@ -1,16 +1,17 @@
-import React from 'react'
-import { configure, addDecorator } from '@storybook/react'
-import { setOptions } from '@storybook/addon-options'
+import React from 'react';
+import { configure, addDecorator } from '@storybook/react';
+import { setOptions } from '@storybook/addon-options';
 import { configureViewport } from '@storybook/addon-viewport';
 import { withNotes } from '@storybook/addon-notes';
-import '../modules/workplus.css'
-import { version } from '../modules/workplus.css/package.json'
+
+import '../modules/workplus.css/index.css';
+import { version } from '../modules/workplus.css/package.json';
 
 setOptions({
   name: `Workplus CSS v${version}`,
   url: 'https://github.com/WorkPlusFE/workplus.css',
   showDownPanel: false,
-})
+});
 
 configureViewport({
   defaultViewport: 'iphone6',

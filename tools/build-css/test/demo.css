@@ -5,6 +5,13 @@
   --fontSize: 1rem;
   --mainColor: #12345678;
   --secondaryColor: lab(32.5 38.5 -47.6 / 90%);
+
+  --breakpoints: (
+		sm: 576px,
+		md: 768px,
+		lg: 992px,
+		xl: 1200px
+	);
 }
 
 html {
@@ -36,4 +43,17 @@ a {
   &:hover {
     color: #F00;
   }
+}
+
+@each $animal, $color in (puma, sea-slug), (black, blue) {
+  .$(animal)-icon {
+    background-image: url('/images/$(animal).png');
+    border: 2px solid $color;
+  }
+}
+
+@each $key, $value in var(--breakpoints) {
+	.container-$(key) {
+		max-width: $(value);
+	}
 }

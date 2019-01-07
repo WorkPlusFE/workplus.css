@@ -14,6 +14,8 @@ const postcssPresetEnv = require('postcss-preset-env');
 const pxtorem = require('postcss-pxtorem');
 const mixins = require("postcss-mixins");
 const simpleVars = require("postcss-simple-vars");
+const each = require("postcss-each");
+const eachVar = require('postcss-each-variables');
 
 function clean(targetPath) {
   rimraf.sync(targetPath);
@@ -35,6 +37,8 @@ module.exports = (src, flags = {}, callback) => {
   const plugins = [
     atImport(),
     mixins(),
+    eachVar(),
+    each(),
     simpleVars(),
     postcssPresetEnv({
       browsers: 'last 2 versions',
