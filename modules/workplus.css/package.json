@@ -19,6 +19,7 @@
     "@workplus-css/filters": "^1.0.0",
     "@workplus-css/form": "^1.0.0",
     "@workplus-css/gap": "^1.0.0",
-    "@workplus-css/flexbox": "^1.0.0"
+    "@workplus-css/flexbox": "^1.0.0",
+    "@workplus-css/thin-border": "^1.0.0"
   }
 }

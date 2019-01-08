@@ -1,1 +1,66 @@
 $prefix: $global-prefix;
+
+.$(prefix)thin-border-top,
+.$(prefix)tb-top {
+  position: relative;
+}
+
+.$(prefix)thin-border-top::before,
+.$(prefix)tb-top::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: auto;
+  right: auto;
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-border);
+  display: block;
+  z-index: 2;
+  transform-origin: 50% 100%;
+}
+
+.$(prefix)thin-border-bottom,
+.$(prefix)tb-bottom {
+  position: relative;
+}
+
+.$(prefix)thin-border-bottom::after,
+.$(prefix)tb-bottom::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: auto;
+  bottom: 0;
+  right: auto;
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-border);
+  display: block;
+  z-index: 2;
+  transform-origin: 50% 100%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .$(prefix)thin-border-top::before,
+  .$(prefix)tb-top::before {
+    transform: scaleY(.5);
+  }
+
+  .$(prefix)thin-border-bottom::after,
+  .$(prefix)tb-bottom::after {
+    transform: scaleY(.5);
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 3) {
+  .$(prefix)thin-border-top::before,
+  .$(prefix)tb-top::before {
+    transform: scaleY(.33);
+  }
+
+  .$(prefix)thin-border-bottom::after,
+  .$(prefix)tb-bottom::after {
+    transform: scaleY(.33);
+  }
+}
