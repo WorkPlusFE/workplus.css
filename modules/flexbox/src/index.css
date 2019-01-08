@@ -1,0 +1,135 @@
+$prefix: $global-prefix;
+
+.$(prefix)flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.$(prefix)flex-center {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.$(prefix)flex-auto {
+  flex: 1 1 auto;
+}
+
+.$(prefix)flex-none {
+  flex: none;
+}
+
+.$(prefix)flex-noshrink {
+  flex-shrink: 0;
+}
+
+@each $val in 1,2,3,4,5,6,7,8,9,10 {
+  .$(prefix)flex-$(val) {
+    flex-grow: $(val);
+  }
+}
+
+/* flex-direction: row | row-reverse | column | column-reverse; */
+.$(prefix)flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.$(prefix)flex-column {
+  flex-direction: column;
+}
+
+.$(prefix)flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+/* flex-wrap: nowrap | wrap | wrap-reverse; */
+.$(prefix)flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.$(prefix)flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+/* justify-content: flex-start | flex-end | center | space-between | space-around; */
+.$(prefix)flex-justify-start,
+.$(prefix)flex-js {
+  justify-content: flex-start;
+}
+
+.$(prefix)flex-justify-end,
+.$(prefix)flex-je {
+  justify-content: flex-end;
+}
+
+.$(prefix)flex-justify-center,
+.$(prefix)flex-jc {
+  justify-content: center;
+}
+
+.$(prefix)flex-justify-between,
+.$(prefix)flex-jb {
+  justify-content: space-between;
+}
+
+.$(prefix)flex-justify-around,
+.$(prefix)flex-ja {
+  justify-content: space-around;
+}
+
+/* align-items: stretch | flex-start | flex-end | center | baseline; */
+.$(prefix)flex-align-start,
+.$(prefix)flex-as {
+  align-items: flex-start;
+}
+
+.$(prefix)flex-align-end,
+.$(prefix)flex-ae {
+  align-items: flex-end;
+}
+
+.$(prefix)flex-align-center,
+.$(prefix)flex-ac {
+  align-items: center;
+}
+
+.$(prefix)flex-align-baseline,
+.$(prefix)flex-ab {
+  align-items: baseline;
+}
+
+.$(prefix)flex-align-stretch,
+.$(prefix)flex-ast {
+  align-items: stretch;
+}
+
+/* align-self: stretch | auto | flex-start | flex-end | center | baseline; */
+.$(prefix)flex-self-stretch,
+.$(prefix)flex-sst {
+  align-self: stretch;
+}
+
+.$(prefix)flex-self-auto,
+.$(prefix)flex-sa {
+  align-self: auto;
+}
+
+.$(prefix)flex-self-start,
+.$(prefix)flex-ss {
+  align-self: flex-start;
+}
+
+.$(prefix)flex-self-end,
+.$(prefix)flex-se {
+  align-self: flex-end;
+}
+
+.$(prefix)flex-self-center,
+.$(prefix)flex-sc {
+  align-self: center;
+}
+
+.$(prefix)flex-self-baseline,
+.$(prefix)flex-sb {
+  align-self: baseline;
+}

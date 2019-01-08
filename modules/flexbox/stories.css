@@ -1,0 +1,14 @@
+.flex-box {
+  height: 100px;
+  background: #f9f9f9;
+}
+
+.flex-item {
+  border: 1px solid #dbdbdb;
+  background: #C4DCB9;
+  font-size: 13px;
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  flex-basis: 80px;
+}

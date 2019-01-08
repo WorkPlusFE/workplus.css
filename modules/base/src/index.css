@@ -6,7 +6,8 @@
   --color-background-faded: color(var(--color-background) lightness(-5%));
 
   --color-text: #333;
-  --color-text-muted: #999;
+  --color-text-gray: #999;
+  --color-text-muted: var(--color-text-gray);
   --color-white: #fff;
 
   --color-border: #dcdcdc;
