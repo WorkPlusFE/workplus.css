@@ -1,5 +1,6 @@
 $prefix: $global-prefix;
 
+/* Container */
 .$(prefix)pages {
   position: relative;
   width: 100%;
@@ -41,4 +42,35 @@ $prefix: $global-prefix;
 
 .$(prefix)block-title + .$(prefix)block {
   margin-top: 10px;
+}
+
+/* Table */
+$(prefix)table {
+  display: table;
+}
+
+$(prefix)table-cell {
+  display: table-cell;
+}
+
+/* Align */
+.$(prefix)float-left {
+  float: left;
+}
+
+.$(prefix)float-right {
+  float: right;
+}
+
+.$(prefix)clear::after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  width: 100%;
+  height: 0;
+  clear: both;
+}
+
+$(prefix)middle {
+  vertical-align: middle;
 }

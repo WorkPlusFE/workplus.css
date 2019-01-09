@@ -92,3 +92,7 @@ $prefix: $global-prefix;
     padding: $(value) 0;
   }
 }
+
+.$(prefix)mx-auto {
+  margin: 0 auto;
+}

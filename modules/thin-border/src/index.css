@@ -45,22 +45,23 @@ $prefix: $global-prefix;
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .$(prefix)thin-border-top::before,
   .$(prefix)tb-top::before {
-    transform: scaleY(.5);
+    transform: scaleY(0.5);
   }
 
   .$(prefix)thin-border-bottom::after,
   .$(prefix)tb-bottom::after {
-    transform: scaleY(.5);
+    transform: scaleY(0.5);
   }
 }
+
 @media screen and (-webkit-min-device-pixel-ratio: 3) {
   .$(prefix)thin-border-top::before,
   .$(prefix)tb-top::before {
-    transform: scaleY(.33);
+    transform: scaleY(0.33);
   }
 
   .$(prefix)thin-border-bottom::after,
   .$(prefix)tb-bottom::after {
-    transform: scaleY(.33);
+    transform: scaleY(0.33);
   }
 }
