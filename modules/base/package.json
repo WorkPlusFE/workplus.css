@@ -1,6 +1,6 @@
 {
   "name": "@workplus-css/base",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The base part of workplus.css",
   "main": "src/index.css",
   "author": "Hejx",

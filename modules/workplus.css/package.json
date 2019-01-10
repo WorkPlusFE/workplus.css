@@ -1,6 +1,6 @@
 {
   "name": "@workplus-css/framework",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.css",
   "author": "Hejx",
@@ -10,17 +10,17 @@
   },
   "homepage": "https://github.com/WorkPlusFE/workplus.css",
   "dependencies": {
-    "@workplus-css/reset": "^1.0.0",
-    "@workplus-css/base": "^1.0.0",
-    "@workplus-css/text": "^1.0.0",
-    "@workplus-css/button": "^1.0.0",
-    "@workplus-css/layout": "^1.0.0",
-    "@workplus-css/table": "^1.0.0",
-    "@workplus-css/filters": "^1.0.0",
-    "@workplus-css/form": "^1.0.0",
-    "@workplus-css/gap": "^1.0.0",
-    "@workplus-css/flexbox": "^1.0.0",
-    "@workplus-css/thin-border": "^1.0.0",
-    "@workplus-css/grid": "^1.0.0"
+    "@workplus-css/base": "^1.0.1",
+    "@workplus-css/button": "^1.0.1",
+    "@workplus-css/filters": "^1.0.1",
+    "@workplus-css/flexbox": "^1.0.1",
+    "@workplus-css/form": "^1.0.1",
+    "@workplus-css/gap": "^1.0.1",
+    "@workplus-css/grid": "^1.0.1",
+    "@workplus-css/layout": "^1.0.1",
+    "@workplus-css/reset": "^1.0.1",
+    "@workplus-css/table": "^1.0.1",
+    "@workplus-css/text": "^1.0.1",
+    "@workplus-css/thin-border": "^1.0.1"
   }
 }
