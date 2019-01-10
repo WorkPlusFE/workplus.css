@@ -1,6 +1,6 @@
 {
   "name": "@workplus-css/form",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "src/index.css",
   "scripts": {
@@ -9,7 +9,10 @@
   "author": "Hejx <531601727@qq.com>",
   "homepage": "https://github.com/WorkPlusFE/workplus.css",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
-    "@workplus-css/base": "^1.0.1"
+    "@workplus-css/base": "^1.0.2"
   }
 }
