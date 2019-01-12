@@ -19,10 +19,11 @@ A lightweight, scalable, mobile-first CSS framework that only provides common ba
 ### Install
 
 ```bash
-# npm install @workplus-css/framework
+# Framework
+npm install @workplus-css/framework
 
-// Or just install one module
-# npm install @workplus-css/button
+# Or just install one module
+npm install @workplus-css/button
 ```
 
 ### How to use
@@ -39,19 +40,19 @@ import '@workplus-css/button/dist/button.css';
 At first, you should run:
 
 ```bash
-# npm run bootstrap
+npm run bootstrap
 ```
 
 And then, if you want to add a new module, perform the following bash:
 
 ```bash
-# npm run new-module module-name
+npm run new-module module-name
 ```
 
 Start the StroyBook server:
 
 ```bash
-# npm run sb:start
+npm run sb:start
 ```
 
 ### Author
