@@ -10,9 +10,13 @@
     "diff": "lerna diff",
     "updated": "lerna updated || exit 0",
     "build": "lerna run build",
+    "new-module": "script/new-module",
     "sb:start": "start-storybook -p 9001 -c .storybook",
-    "new-module": "script/new-module"
+    "sb:build": "build-storybook -c .storybook -o .out",
+    "predeploy": "npm run sb:build",
+    "deploy": "gh-pages -d .out"
   },
+  "homepage": "https://github.com/WorkPlusFE/workplus.css",
   "dependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
