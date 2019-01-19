@@ -1,12 +1,16 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
+import readme from './README.md';
+
 const Wrapper = ({ title, children }) => (<div>
   <div className="w-block-title">{title}</div>
   <div className="w-block">
     {children}
   </div>
 </div>);
+
+const notes = { markdown: readme };
 
 storiesOf('Filters', module)
   .add('Image gray scale', () => (
@@ -25,4 +29,4 @@ storiesOf('Filters', module)
         alt="demo"
       />
     </Wrapper>
-  ))
+  ), { notes });
