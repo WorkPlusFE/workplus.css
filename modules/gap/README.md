@@ -91,10 +91,11 @@ Padding:
     <span>w-py-30</span>
   </div>
 </div>
-
+```
 
 Margin:
 
+```html
 <div class="w-block">
   <div class="margin-orange">
     <span class="w-m-5">w-m-5</span>

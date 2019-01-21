@@ -1,5 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import readme from './README.md';
+
+const notes = { markdown: readme };
 
 storiesOf('Table', module)
   .add('Default table', () => (
@@ -31,4 +34,4 @@ storiesOf('Table', module)
         </tbody>
       </table>
     </div>
-  ))
+  ), { notes });
